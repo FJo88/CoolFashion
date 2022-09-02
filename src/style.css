@@ -1,82 +1,189 @@
 :root {
-    --gradient: linear-gradient(
-        45deg,
-        #ff7f58,
-        #ff6f6f,
-        #ff6f91,
-        #ff9671,
-        #ffc75f,
-        #f9f871
-    );
+  --gradient: linear-gradient(
+    45deg,
+    #ff7f58,
+    #ff6f6f,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
 }
 
 @keyframes bg-animation {
-    0% {background-position: left}
-    100% {background-position: right}
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
+@keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    80% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    90% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    100% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    /* 70% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+          6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+      }
+      80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+          6px 6px 0 var(--color-tertiary);
+      }
+      90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+      }
+      100% {
+        text-shadow: none;
+      } */
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-12px, -12px);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+    }
+    60% {
+      transform: translate(-12px, -12px);
+    }
+    70% {
+      transform: translate(-12px, -12px);
+    }
+    80% {
+      transform: translate(-12px, -12px);
+    }
+    90% {
+      transform: translate(-12px, -12px);
+    }
+    100% {
+      transform: translate(-12px, -12px);
+    }
+  }
 
 .heroImgContainer {
-    display: flex;
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://freight.cargo.site/t/original/i/3bc7a285d5fe7c70e1c9d19b63f78a6902460322a29a2bd68ee6ad4d96629bc8/sophiachang-sophia-chang-without-walls-withoutwalls-getmovinghavefun-urbanoutfitters-urban-outfitters-running-fitness-illustrator-illustration-new-york-city-esymai-4.jpg");
-    width: 100%;
-    padding: 20px 0px 20px 0px;
-    margin: 0px 0px 0px 0px;
-    background-position: center 25%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://freight.cargo.site/t/original/i/3bc7a285d5fe7c70e1c9d19b63f78a6902460322a29a2bd68ee6ad4d96629bc8/sophiachang-sophia-chang-without-walls-withoutwalls-getmovinghavefun-urbanoutfitters-urban-outfitters-running-fitness-illustrator-illustration-new-york-city-esymai-4.jpg");
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroTextContainer {
-    width: 50%;
-    margin-left: auto;
-    margin-right: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .heroTitleContainer {
-    margin-top: 20px;
-    background-color: black;
-    padding: 5px 0px 5px 0px;
+  margin-top: 20px;
+  padding: 5px 0px 5px 0px;
 }
 
 .heroTitle {
-    font-size: 5vw;
-    font-weight: bold;
-    color: transparent;
-    margin: 0;
-    padding: 0;
-    background-image: var(--gradient);
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  /* background-image: var(--gradient);
     background-size: 300%;
     animation: bg-animation 4s infinite alternate;
-    background-clip: text;
+    background-clip: text; */
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: calc(2rem + 4vw);
+  text-align: center;
+  margin: 0;
+  animation: shadows 2.2s ease-in, move 2.2s ease-in;
+  animation-fill-mode: forwards;
+  letter-spacing: 0.4rem;
 }
 
+
+
 .heroText {
-    font-size: 3vw;
-    font-weight: bold;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  margin: 0;
 }
 
 .heroBtn {
-    color: white;
-    font-size: 2vw;
-    font-weight: bold;
-    background-color: black;
-    border: 3px solid black;
-    padding: 1vw 2vw;
-    text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  background-color: black;
+  border: 3px solid black;
+  padding: 1vw 2vw;
+  text-decoration: none;
 }
 
 .heroBtn:active {
-    background-color: transparent;
-    color: #303030;
-    border: 3px solid #303030;
+  background-color: transparent;
+  color: #303030;
+  border: 3px solid #303030;
 }
-
-
