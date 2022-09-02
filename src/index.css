@@ -5,6 +5,10 @@
 
 /* styles for main */
 
+.border-gray-100 {
+  --tw-border-opacity: 0;
+}
+
 .headers {
   font-family: sans-serif;
   color: black;
