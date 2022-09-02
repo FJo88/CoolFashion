@@ -62,7 +62,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <h3 className="car-header">Inspiration</h3>
+      <h3 className="car-header text-center">Get inspired and share your style. #coolfashionstyles <br /> <i className="fa-brands fa-instagram"></i></h3>
+  
     </>
     );
 }
