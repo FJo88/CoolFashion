@@ -76,19 +76,19 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start lg:w-0 lg:flex-1 text-white text-xl">
             <a href="#">
               <span className="sr-only">Your Company</span>
               <a
                 className="h-8 w-auto sm:h-10"
-              />Cool Fahion
+              />Cool Fashion
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -100,7 +100,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
                     <span>Girls</span>
@@ -124,20 +124,20 @@ export default function Header() {
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-black  px-5 py-6 sm:gap-8 sm:p-8">
                           {girls.map((girl) => (
                             <a
                               key={girl.name}
                               href={girl.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{girl.name}</p>
-                                <p className="mt-1 text-sm text-gray-500">{girl.description}</p>
+                                <p className="text-base font-medium text-gray-500">{girl.name}</p>
+                                <p className="mt-1 text-sm ">{girl.description}</p>
                               </div>
                             </a>
                           ))}
                         </div>
-                        <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                        <div className="space-y-6 px-5 py-5  sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
                               <a
@@ -162,7 +162,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
                     <span>Boys</span>
@@ -186,16 +186,16 @@ export default function Header() {
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {boys.map((boy) => (
                             <a
                               key={boy.name}
                               href={boy.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start  rounded-lg p-3 hover:bg-gray-50"
                             >
                               <boy.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{boy.name}</p>
+                                <p className="text-base font-medium text-gray-500">{boy.name}</p>
                               </div>
                             </a>
                           ))}
@@ -212,7 +212,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
                     <span>Brands</span>
@@ -236,7 +236,7 @@ export default function Header() {
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {brands.map((item) => (
                             <a
                               key={item.name}
@@ -244,19 +244,19 @@ export default function Header() {
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                <p className="text-base font-medium text-gray-500">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
                             </a>
                           ))}
                         </div>
-                        <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
+                        <div className="bg-black text-gray-50 px-5 py-5 sm:px-8 sm:py-8">
                           <div>
                             <h3 className="text-base font-medium text-gray-500">Recently Bougt</h3>
                             <ul role="list" className="mt-4 space-y-4">
                               {recentlyBought.map((post) => (
                                 <li key={post.id} className="truncate text-base">
-                                  <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
+                                  <a href={post.href} className="font-medium text-gray-500 hover:text-gray-700">
                                     {post.name}
                                   </a>
                                 </li>
@@ -276,9 +276,6 @@ export default function Header() {
                 </>
               )}
             </Popover>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Sneakers
-            </a>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
@@ -305,7 +302,7 @@ export default function Header() {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -314,7 +311,7 @@ export default function Header() {
                   /> Cool Fashion
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
