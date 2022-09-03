@@ -126,7 +126,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("https://freight.cargo.site/t/original/i/3bc7a285d5fe7c70e1c9d19b63f78a6902460322a29a2bd68ee6ad4d96629bc8/sophiachang-sophia-chang-without-walls-withoutwalls-getmovinghavefun-urbanoutfitters-urban-outfitters-running-fitness-illustrator-illustration-new-york-city-esymai-4.jpg");
   width: 100%;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 30px 0px;
   margin: 0px 0px 0px 0px;
   background-position: center 25%;
   background-repeat: no-repeat;
@@ -161,11 +161,9 @@
   text-align: center;
   animation: shadows 2.2s ease-in, move 2.2s ease-in, moving 2s ease-in infinite;
   animation-delay: 0s, 0s, 1.1s;
-  /* animation-fill-mode: forwards; */
   letter-spacing: 0.4rem;
+  line-height: 70px;
 }
-
-
 
 .heroText {
   font-size: 3vw;
