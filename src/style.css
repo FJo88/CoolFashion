@@ -1,3 +1,4 @@
+/*HERO STYLING*/
 :root {
   --gradient: linear-gradient(
     45deg,
@@ -188,4 +189,13 @@
   background-color: transparent;
   color: #303030;
   border: 3px solid #303030;
+}
+
+/* "CONTACT US" FORM STYLING */
+.formContainer {
+  margin: 20px;
+}
+
+.characterLength {
+  color: white;
 }
