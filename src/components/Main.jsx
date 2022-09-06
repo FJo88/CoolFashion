@@ -3,7 +3,7 @@ const Main = () => {
     return (  
     <>
       <div className="headers">
-        <h1>Categories</h1>
+        <h1>NEW IN</h1>
       </div>
       <div className="square-container">
         <div className="square top-right">
