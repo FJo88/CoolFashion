@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 const NewCategory = () => {
-  return (<>
+  
 
   const [checkedBox, setCheckedbox] = useState(false)
 
@@ -38,7 +38,7 @@ const NewCategory = () => {
 
     </>
   )
-  </>)
+  
 }
 
 export default NewCategory
