@@ -9,11 +9,11 @@ import CategoryPage from './components/CategoryPage';
 function App() {
   return (
     <div className='App'>
-      {/* <Header/>
+       <Header/>
       <MainHero />
       <Main/>
       <InstagramCarousel />
-      <Footer /> */}
+      <Footer />
       <CategoryPage/>
     </div>
   );
