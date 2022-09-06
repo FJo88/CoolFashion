@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdminNewPage from './pages/AdminNewPage';
 import CategoryPage from './pages/CategoryPage';
@@ -14,6 +15,7 @@ function App() {
         <Route path='/contact-us' element={<ContactUsPage />} />
       </Routes>
     </Router>
+
   );
 }
 
