@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<FirstPage />} />
-        <Route path='/admin/new' element={<NewCategory />} />
+        <Route path='/admin/new/category' element={<NewCategory />} />
         <Route path='/admin/new/product' element={<NewProduct />} />
         <Route path='/category' element={<CategoryPage />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
