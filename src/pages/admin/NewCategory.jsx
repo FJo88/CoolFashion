@@ -1,18 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../../components/Header'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
 
-
-<<<<<<< HEAD:src/pages/admin/NewCategory.jsx
 const NewCategory = () => {
-  return (
-    <div>AdminPage
-=======
-const AdminNewPage = () => {
->>>>>>> master:src/pages/AdminNewPage.jsx
-
+  return (<>
 
   const [checkedBox, setCheckedbox] = useState(false)
 
@@ -45,6 +38,7 @@ const AdminNewPage = () => {
 
     </>
   )
+  </>)
 }
 
 export default NewCategory
