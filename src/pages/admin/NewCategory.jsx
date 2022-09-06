@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AdminNewPage = () => {
+const NewCategory = () => {
   return (
     <div>AdminPage
 
@@ -9,4 +9,4 @@ const AdminNewPage = () => {
   )
 }
 
-export default AdminNewPage
+export default NewCategory
