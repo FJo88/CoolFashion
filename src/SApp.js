@@ -4,15 +4,17 @@ import InstagramCarousel from './components/InstagramCarousel';
 import MainHero from './components/MainHero';
 import Header from'./components/Header';
 import Main from './components/Main'
+import CategoryPage from './components/CategoryPage';
 
 function App() {
   return (
     <div className='App'>
-      <Header/>
+      {/* <Header/>
       <MainHero />
       <Main/>
       <InstagramCarousel />
-      <Footer />
+      <Footer /> */}
+      <CategoryPage/>
     </div>
   );
 }
