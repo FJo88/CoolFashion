@@ -60,7 +60,7 @@ const boys = [
     href: '/category',
     icon: CalendarIcon,
   },
-  { name: 'Shorts', href: '#', icon: ShieldCheckIcon },
+  { name: 'Shorts', href: '/category', icon: ShieldCheckIcon },
 ]
 const brands = [{ name: 'Nike', href: '#' }, { name: 'Forever 21', href: '#' }, { name: 'Holister', href: '#' }, { name: 'Rue 21', href: '#' }, { name: 'Ralph Lauren', href: '#' }, { name: 'Adidas', href: '#' }]
 
