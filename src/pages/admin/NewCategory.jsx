@@ -5,7 +5,13 @@ import { useState } from 'react'
 
 
 
+<<<<<<< HEAD:src/pages/admin/NewCategory.jsx
+const NewCategory = () => {
+  return (
+    <div>AdminPage
+=======
 const AdminNewPage = () => {
+>>>>>>> master:src/pages/AdminNewPage.jsx
 
 
   const [checkedBox, setCheckedbox] = useState(false)
@@ -41,4 +47,4 @@ const AdminNewPage = () => {
   )
 }
 
-export default AdminNewPage
+export default NewCategory
