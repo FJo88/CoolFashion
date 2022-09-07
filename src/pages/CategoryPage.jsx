@@ -14,13 +14,15 @@ const CategoryPage = () => {
   ];
 
   return (
-
     <Container>
-        <h1>Jackor</h1>
+      <h1>Jackor</h1>
       <Row className="justify-content-sm-center" xs={2} md={4}>
         <Col lg={3} sm={6}>
-          <Card className="bg-dark text-white" style={{ width: "auto"}}>
-            <Card.Img variant="top" src="https://placeholder.pics/svg/300x400" />
+          <Card className="bg-dark text-white" style={{ width: "auto" }}>
+            <Card.Img
+              variant="top"
+              src="https://placeholder.pics/svg/300x400"
+            />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -33,9 +35,13 @@ const CategoryPage = () => {
         </Col>
         <Col lg={3} sm={6}>
           <Card className="bg-dark text-white" style={{ width: "auto" }}>
-            <Card.Img variant="top" src="https://placeholder.pics/svg/300x400" />
+            <Card.Img
+              variant="top"
+              src="https://placeholder.pics/svg/300x400"
+            />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Röd Jacka</Card.Title>
+              <Card.Subtitle>199 Kr</Card.Subtitle>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -46,7 +52,10 @@ const CategoryPage = () => {
         </Col>
         <Col lg={3} sm={6}>
           <Card className="bg-dark text-white" style={{ width: "auto" }}>
-            <Card.Img variant="top" src="https://placeholder.pics/svg/300x400" />
+            <Card.Img
+              variant="top"
+              src="https://placeholder.pics/svg/300x400"
+            />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -59,7 +68,10 @@ const CategoryPage = () => {
         </Col>
         <Col lg={3} sm={6}>
           <Card className="bg-dark text-white" style={{ width: "auto" }}>
-            <Card.Img variant="top" src="https://placeholder.pics/svg/300x400" />
+            <Card.Img
+              variant="top"
+              src="https://placeholder.pics/svg/300x400"
+            />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -70,7 +82,6 @@ const CategoryPage = () => {
             </Card.Body>
           </Card>
         </Col>
-       
       </Row>
     </Container>
   );
