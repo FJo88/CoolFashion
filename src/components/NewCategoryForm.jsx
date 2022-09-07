@@ -18,7 +18,7 @@ const NewCategoryForm = () => {
         id="title"
         name="title"
         className="form-control title"
-        placeholder="Title"
+        placeholder="Name of category"
         pattern="[A-Za-zÀ-ž\s]{1,20}"
         maxLength="20"
         required
@@ -26,10 +26,6 @@ const NewCategoryForm = () => {
     </div>
   </div>
 
-  <div className="input-group mb-3">
-    <input type="file" accept="image/*"className="form-control" id="inputGroupFile02" required />
-    <label className="input-group-text" htmlfor="inputGroupFile02">Upload</label>
-  </div>
   <p className="characterLength">{characters.length}/400 character limit</p>
   <div className="row mb-3">
     <div className="col">
