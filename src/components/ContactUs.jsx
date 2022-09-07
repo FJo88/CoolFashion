@@ -2,9 +2,7 @@ import React from "react";
 import "../style.css";
 import { useState } from "react";
 
-const ContactUs = () => {
-
-  const [message, setMessage] = useState(false);
+const ContactUs = (props) => {
 
   const [characters, setCharacters] = useState("")
 
@@ -12,13 +10,12 @@ const ContactUs = () => {
     character(e.target.value)
   }
 
-  const handleSend = (e) => {
-    e.preventDefault();
-    setMessage(true)
+  const handleSend = () => {
+    props.getConfirmation(true);
   }
 
   return (
-      <form className="formContainer" onSubmit={(e) => handleSend(e)}>
+      <form className="formContainer" onSubmit={handleSend}>
         <h2 className="contactTitle">Contact our support</h2>
         <div className="row mb-3">
           <div className="col">
@@ -79,8 +76,8 @@ const ContactUs = () => {
         <button className="btn btn-primary sendBtn">
         Send
       </button>
-      {message && <p className="contactMessageOne">Thank you for contacting our support!</p>}
-      {message && <p className="contactMessageTwo">We'll get back to you as soon as possible</p>}
+      {/* {message && <p className="contactMessageOne">Thank you for contacting our support!</p>}
+      {message && <p className="contactMessageTwo">We'll get back to you as soon as possible</p>} */}
       </form>
   );
 };
