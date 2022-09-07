@@ -4,14 +4,21 @@ import { useState } from "react";
 
 const ContactUs = () => {
 
+  const [message, setMessage] = useState(false);
+
   const [characters, setCharacters] = useState("")
 
   const checkCharacterLength = (e, character) => {
     character(e.target.value)
   }
 
+  const handleSend = (e) => {
+    e.preventDefault();
+    setMessage(true)
+  }
+
   return (
-      <form className="formContainer">
+      <form className="formContainer" onSubmit={(e) => handleSend(e)}>
         <h2 className="contactTitle">Contact our support</h2>
         <div className="row mb-3">
           <div className="col">
@@ -72,6 +79,8 @@ const ContactUs = () => {
         <button className="btn btn-primary sendBtn">
         Send
       </button>
+      {message && <p className="contactMessageOne">Thank you for contacting our support!</p>}
+      {message && <p className="contactMessageTwo">We'll get back to you as soon as possible</p>}
       </form>
   );
 };

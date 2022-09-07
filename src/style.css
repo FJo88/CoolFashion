@@ -213,6 +213,18 @@
   width: 100%;
 }
 
+.contactMessageOne {
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+}
+
+.contactMessageTwo {
+  font-size: 2.5vw;
+  color: white;
+  text-align: center;
+}
+
 input {
   height: 50px;
 }
