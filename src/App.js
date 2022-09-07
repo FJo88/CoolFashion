@@ -5,7 +5,6 @@ import ContactUsPage from './pages/ContactUsPage';
 import FirstPage from './pages/FirstPage';
 import NewProduct from './pages/admin/NewProduct';
 
-
 function App() {
   let jackets = [
     {
