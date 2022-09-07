@@ -20,23 +20,23 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const girls = [
   {
     name: 'Dresses',
-    href: '#',
+    href: '/category',
     icon: ChartBarIcon,
   },
   {
     name: 'Jackets',
-    href: '#',
+    href: '/category',
     icon: CursorArrowRaysIcon,
   },
   { name: 'Tops', href: '#', icon: ShieldCheckIcon },
   {
     name: 'Shirts',
-    href: '#',
+    href: '/category',
     icon: Squares2X2Icon,
   },
   {
     name: 'Accesories',
-    href: '#',
+    href: '/category',
     icon: ArrowPathIcon,
   },
 ]
@@ -47,20 +47,20 @@ const callsToAction = [
 const boys = [
   {
     name: 'Shirts',
-    href: '#',
+    href: '/category',
     icon: LifebuoyIcon,
   },
   {
     name: 'Hoodies',
-    href: '#',
+    href: '/category',
     icon: BookmarkSquareIcon,
   },
   {
     name: 'Jackets',
-    href: '#',
+    href: '/category',
     icon: CalendarIcon,
   },
-  { name: 'Shorts', href: '#', icon: ShieldCheckIcon },
+  { name: 'Shorts', href: '/category', icon: ShieldCheckIcon },
 ]
 const brands = [{ name: 'Nike', href: '#' }, { name: 'Forever 21', href: '#' }, { name: 'Holister', href: '#' }, { name: 'Rue 21', href: '#' }, { name: 'Ralph Lauren', href: '#' }, { name: 'Adidas', href: '#' }]
 
@@ -80,7 +80,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1 text-white text-2xl">
-            <a href="#">
+            <a href="/">
               <a
                 className="h-8 w-auto sm:h-10"
               />Cool Fashion
@@ -304,9 +304,12 @@ export default function Header() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center text-white justify-between">
                 <div>
-                  <a
-                    className="h-8 w-auto"
-                  /> Cool Fashion
+                 
+                  <a href="/">
+              <a
+                className="h-8 w-auto sm:h-10"
+              />Cool Fashion
+            </a>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -329,25 +332,6 @@ export default function Header() {
                 </nav>
               </div>
             </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-700">
-                  Girls
-                </a>
-
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-700">
-                  Boys
-                </a>
-                {boys.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-gray-500 hover:text-gray-700"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
               <div>
                 <a
                   href="#"
@@ -363,7 +347,7 @@ export default function Header() {
                 </p>
               </div>
             </div>
-          </div>
+          
         </Popover.Panel>
       </Transition>
     </Popover>

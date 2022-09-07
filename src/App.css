@@ -134,4 +134,12 @@
 .category-card{
   background-color: white;
 }
+.card-title{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.card-price{
+  padding-top: 50px;
+}
+
 
