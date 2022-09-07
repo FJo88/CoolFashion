@@ -1,4 +1,6 @@
-import {React} from "react";
+
+import React from "react";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -56,7 +58,7 @@ const Footer = () => {
               <a href="#">Returns</a>
             </li>
             <li>
-              <Link to='/admin/new'>For employees</Link>
+              <Link to='/admin'>For employees</Link>
               </li>
           </ul>
         </div>
