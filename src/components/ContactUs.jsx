@@ -12,6 +12,7 @@ const ContactUs = () => {
 
   return (
       <form className="formContainer">
+        <h2 className="contactTitle">Contact our support</h2>
         <div className="row mb-3">
           <div className="col">
             <input
@@ -60,13 +61,15 @@ const ContactUs = () => {
               name="userQuestion"
               className="form-control"
               placeholder="Fill out your question here"
+              rows="4" 
+              cols="50"
               maxLength="400"
               onChange={(e) => checkCharacterLength(e, setCharacters)}
               required 
             ></textarea>
           </div>
         </div>
-        <button className="btn btn-primary">
+        <button className="btn btn-primary sendBtn">
         Send
       </button>
       </form>

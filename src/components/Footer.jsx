@@ -43,7 +43,7 @@ const Footer = () => {
           <h4>Shop</h4>
           <ul>
             <li>
-              <a href="#">Contact us</a>
+              <Link to='/contact-us'>Contact us</Link>
             </li>
             <li>
               <a href="#">Gift Cards</a>
