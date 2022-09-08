@@ -1,12 +1,14 @@
 import React from 'react'
 import { useState } from "react";
 
-const NewProductForm = () => {
+const NewProductForm = (props) => {
   const [characters, setCharacters] = useState("")
 
   const checkCharacterLength = (e, character) => {
     character(e.target.value)
   }
+
+  console.log(props)
   return (
   <>
    <h1 className='text-xl text-center'>Add new product</h1>
@@ -53,10 +55,9 @@ const NewProductForm = () => {
       <div className="input-group mb-3">
         <select className="form-select" id="inputGroupSelect01" required>
           <option selected>Choose category</option>
-          <option value="1">Dress</option>
-          <option value="2">Jacket</option>
-          <option value="3">Tops</option>
-          <option value="4">Shirts</option>
+          {props.categories.map((category, i) => (
+            <option value={i} key={i}>{category.name}</option>
+          ))}
         </select>
       </div>
 
