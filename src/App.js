@@ -21,7 +21,7 @@ function App() {
       brand: 'Levis',
       price: '699 kr',
       category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
+      imageurl: './images/filip_1.jpg',
       description: 'lorem dolor ipsum',
     },
     {
@@ -29,7 +29,7 @@ function App() {
       brand: 'Tommy Hilfiger',
       price: '799 kr',
       category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
+      imageurl: 'public\images\filip_2.jpg',
       description: 'lorem',
     },
     {
@@ -37,7 +37,7 @@ function App() {
       brand: 'Levis',
       price: '599 kr',
       category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
+      imageurl: 'public\images\Michiel_2.jpg',
       description: 'lorem',
     },
     {
