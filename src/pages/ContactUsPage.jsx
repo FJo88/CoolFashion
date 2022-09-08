@@ -8,7 +8,7 @@ import Header from '../components/Header'
 
 const ContactUsPage = () => {
 
-  const [confirmed, setConfirmed] = useState()
+  const [confirmed, setConfirmed] = useState(false)
 
   const location = useLocation();
 

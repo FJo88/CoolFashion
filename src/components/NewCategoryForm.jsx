@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 import Header from './Header'
 
-const NewCategoryForm = () => {
+const NewCategoryForm = (props) => {
     const [characters, setCharacters] = useState("")
 
     const checkCharacterLength = (e, character) => {
       character(e.target.value)
     }
+
+    const handleSend = () => {
+      props.getConfirmation(true);
+    }
+
   return (
   <>
+<form className="formContainer" onSubmit={handleSend}>
 <h1 className='text-xl text-center'>Add new category</h1>
-<form className="formContainer">
   <div className="row mb-3">
     <div className="col">
       <input

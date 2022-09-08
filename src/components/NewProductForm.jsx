@@ -8,11 +8,15 @@ const NewProductForm = (props) => {
     character(e.target.value)
   }
 
+  const handleSend = () => {
+    props.getConfirmation(true);
+  }
+  
   console.log(props)
   return (
   <>
    <h1 className='text-xl text-center'>Add new product</h1>
-    <form className="formContainer">
+    <form className="formContainer" onSubmit={handleSend}>
       <div className="row mb-3">
         <div className="col">
           <input

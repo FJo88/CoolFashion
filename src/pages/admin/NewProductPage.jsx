@@ -1,17 +1,25 @@
 import React from 'react'
 import NewProductForm from '../../components/NewProductForm'
 import Header from '../../components/Header'
-import { useState, useEffect } from 'react'
+import { useState,} from 'react'
 import { girls } from '../../components/Header'
+import ProductConfirmed from '../../components/ProductConfirmed'
 
 const NewProductPage = () => {
 
   const [data, setData] = useState(girls)
 
-  return (
+  const [confirmed, setConfirmed] = useState(false)
+
+  const getConfirmation = (confirm) => {
+    setConfirmed(confirm)
+  }
+
+return (
     <>
-    <Header />
-    <NewProductForm categories={data}/>
+    <Header/>
+    {!confirmed && <NewProductForm getConfirmation={getConfirmation} categories={data}/>}
+    {confirmed && <ProductConfirmed getConfirmation={getConfirmation}/>}
     </>
   )
 }
