@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../../components/Header'
-import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 

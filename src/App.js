@@ -66,7 +66,7 @@ function App() {
         <Route path='/admin' element={<AdminFirstPage />} />
         <Route path='/admin/new/category' element={<NewCategoryPage />} />
         <Route path='/admin/new/product' element={<NewProductPage />} />
-        <Route path='/category' element={<CategoryPage />} />
+        <Route path='/category' element={<CategoryPage {...jackets} />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
       </Routes>
     </Router>
