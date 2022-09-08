@@ -1,7 +1,7 @@
 import React from 'react'
 import "../style.css";
 
-const ContactConfimed = () => {
+const ContactConfirmed = () => {
   return (
     <div>
         <p className="contactMessageOne">Thank you for contacting our support!</p>
@@ -10,4 +10,4 @@ const ContactConfimed = () => {
   )
 }
 
-export default ContactConfimed
+export default ContactConfirmed

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useLocation } from 'react-router'
-import ContactConfimed from '../components/ContactConfimed'
+import ContactConfirmed from '../components/ContactConfirmed'
 import ContactUs from '../components/ContactUs'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -23,7 +23,7 @@ const ContactUsPage = () => {
   return (
     <div>
       <Header />
-      {confirmed && <ContactConfimed />}
+      {confirmed && <ContactConfirmed />}
       {!confirmed && <ContactUs getConfirmation={getConfirmation}/>}
       <Footer />
     </div>

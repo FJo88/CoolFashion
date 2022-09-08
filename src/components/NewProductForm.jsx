@@ -1,5 +1,7 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { useState } from "react";
+import { girls } from './Header';
 
 const NewProductForm = (props) => {
   const [characters, setCharacters] = useState("")
@@ -11,8 +13,7 @@ const NewProductForm = (props) => {
   const handleSend = () => {
     props.getConfirmation(true);
   }
-  
-  console.log(props)
+
   return (
   <>
    <h1 className='text-xl text-center'>Add new product</h1>
@@ -59,7 +60,7 @@ const NewProductForm = (props) => {
       <div className="input-group mb-3">
         <select className="form-select" id="inputGroupSelect01" required>
           <option selected>Choose category</option>
-          {props.categories.map((category, i) => (
+          {girls.map((category, i) => (
             <option value={i} key={i}>{category.name}</option>
           ))}
         </select>
@@ -84,7 +85,7 @@ const NewProductForm = (props) => {
           ></textarea>
         </div>
       </div>
-      <button className="btn btn-primary">
+      <button className="btn btn-primary" >
         Add
       </button>
     </form>

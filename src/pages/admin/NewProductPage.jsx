@@ -2,12 +2,11 @@ import React from 'react'
 import NewProductForm from '../../components/NewProductForm'
 import Header from '../../components/Header'
 import { useState,} from 'react'
-import { girls } from '../../components/Header'
 import ProductConfirmed from '../../components/ProductConfirmed'
 
 const NewProductPage = () => {
 
-  const [data, setData] = useState(girls)
+  // const [data, setData] = useState(girls)
 
   const [confirmed, setConfirmed] = useState(false)
 
@@ -18,7 +17,7 @@ const NewProductPage = () => {
 return (
     <>
     <Header/>
-    {!confirmed && <NewProductForm getConfirmation={getConfirmation} categories={data}/>}
+    {!confirmed && <NewProductForm getConfirmation={getConfirmation} />}
     {confirmed && <ProductConfirmed getConfirmation={getConfirmation}/>}
     </>
   )
