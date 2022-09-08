@@ -13,7 +13,7 @@ function App() {
       brand: 'Levis',
       price: '599 kr',
       category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
+      imageurl: 'https://placehold.jp/300x400.png',
       description: 'lorem ipsum dolor',
     },
     {
@@ -21,7 +21,7 @@ function App() {
       brand: 'Levis',
       price: '699 kr',
       category: 'Jackets',
-      imageurl: './images/filip_1.jpg',
+      imageurl: 'https://placehold.jp/300x400.png',
       description: 'lorem dolor ipsum',
     },
     {
@@ -29,7 +29,7 @@ function App() {
       brand: 'Tommy Hilfiger',
       price: '799 kr',
       category: 'Jackets',
-      imageurl: 'public\images\filip_2.jpg',
+      imageurl: 'https://placehold.jp/300x400.png',
       description: 'lorem',
     },
     {
@@ -37,23 +37,7 @@ function App() {
       brand: 'Levis',
       price: '599 kr',
       category: 'Jackets',
-      imageurl: 'public\images\Michiel_2.jpg',
-      description: 'lorem',
-    },
-    {
-      title: 'Brown Jacket',
-      brand: 'Levis',
-      price: '1099 kr',
-      category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
-      description: 'lorem',
-    },
-    {
-      title: 'Brown Jacket',
-      brand: 'Levis',
-      price: '1099 kr',
-      category: 'Jackets',
-      imageurl: 'https://placeholder.pics/svg/300x400',
+      imageurl: 'https://placehold.jp/300x400.png',
       description: 'lorem',
     },
   ];
