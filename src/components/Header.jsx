@@ -18,7 +18,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
 
-const girls = [
+export const girls = [
   {
     name: 'Dresses',
     href: '/category',
@@ -41,6 +41,7 @@ const girls = [
     icon: ArrowPathIcon,
   },
 ]
+
 const callsToAction = [
   { name: 'Hallowwen', href: '#', icon: PlayIcon },
   { name: 'Autumn 2022', href: '#', icon: PhoneIcon },
@@ -71,11 +72,14 @@ const recentlyBought = [
   { id: 3, name: 'Solid Slant Pocket Trousers', href: '#' },
 ]
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Header() {
+
   return (
     <Popover className="relative bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
