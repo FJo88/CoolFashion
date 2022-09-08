@@ -16,15 +16,15 @@ const AdminFirstPage = () => {
     <Header/>
       <h1 className='text-center'>Welcome Hans-Christian.</h1>
       <h2 className='text-center text-white'>Would you like to create a new product or a new category?</h2>
-    <div className='flex justify-between'>
+    <div className='d-flex justify-content-around'>
       <div className='mt-3'>
        <Link to='/admin/new/product'>
-      <span className='text-white underline '>Create new product.</span>
+      <button className='text-white btn btn-secondary btn-s'>Create new product</button>
       </Link>
       </div>
       <div className='mt-3'>
         <Link to='/admin/new/category'>
-      <span className='text-white underline'>Create new category.</span>
+      <button className='text-white btn btn-secondary btn-s '>Create new category</button>
       </Link>
       </div>
       </div>

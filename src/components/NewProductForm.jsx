@@ -53,9 +53,10 @@ const NewProductForm = () => {
       <div className="input-group mb-3">
         <select className="form-select" id="inputGroupSelect01" required>
           <option selected>Choose category</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option value="1">Dress</option>
+          <option value="2">Jacket</option>
+          <option value="3">Tops</option>
+          <option value="4">Shirts</option>
         </select>
       </div>
 
