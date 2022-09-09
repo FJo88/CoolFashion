@@ -8,15 +8,15 @@ const Footer = () => {
     <div className="container">
       <div className="row-delivery">
         <div className="del-col">
-          <i class="fa-solid fa-truck-fast"></i>
+          <i className="fa-solid fa-truck-fast"></i>
           <h3>Fast Delivery</h3>
         </div>
         <div className="del-col">
-          <i class="fa-solid fa-right-left"></i>
+          <i className="fa-solid fa-right-left"></i>
           <h3>Free Returns</h3>
         </div>
         <div className="del-col">
-          <i class="fa-solid fa-credit-card"></i>
+          <i className="fa-solid fa-credit-card"></i>
           <h3>Safe payments</h3>
         </div>
       </div>

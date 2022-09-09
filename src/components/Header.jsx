@@ -36,14 +36,14 @@ export const girls = [
     icon: Squares2X2Icon,
   },
   {
-    name: 'Accesories',
+    name: 'Accessories',
     href: '/category',
     icon: ArrowPathIcon,
   },
 ]
 
 const callsToAction = [
-  { name: 'Hallowwen', href: '#', icon: PlayIcon },
+  { name: 'Halloween', href: '#', icon: PlayIcon },
   { name: 'Autumn 2022', href: '#', icon: PhoneIcon },
 ]
 const boys = [
@@ -130,26 +130,28 @@ export default function Header() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1  ring-opacity-5">
                         <div className="relative grid gap-6 bg-black  px-5 py-6 sm:gap-8 sm:p-8">
                           {girls.map((girl) => (
-                            <a
+                            <Link
                               key={girl.name}
-                              href={girl.href}
+                              to={girl.href}
+                              state={{category: girl.name}}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-500">{girl.name}</p>
                                 <p className="mt-1 text-sm ">{girl.description}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="space-y-6 px-5 py-5 bg-indigo-500 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
+                              <Link
+                                to={item.href}
+                                state={{category: item.name}}
                                 className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                               >
                                 <span className="ml-3">{item.name}</span>
-                              </a>
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -191,16 +193,17 @@ export default function Header() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {boys.map((boy) => (
-                            <a
+                            <Link
                               key={boy.name}
-                              href={boy.href}
+                              to={boy.href}
+                              state={{category: boy.name}}
                               className="-m-3 flex items-start  rounded-lg p-3 hover:bg-gray-50"
                             >
                               <boy.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-500">{boy.name}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -241,16 +244,17 @@ export default function Header() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {brands.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
-                              href={item.href}
+                              to={item.href}
+                              state={{category: item.name}}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-500">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="bg-black text-gray-50 px-5 py-5 sm:px-8 sm:py-8">
@@ -259,18 +263,21 @@ export default function Header() {
                             <ul role="list" className="mt-4 space-y-4">
                               {recentlyBought.map((post) => (
                                 <li key={post.id} className="truncate text-base">
-                                  <a href={post.href} className="font-medium text-gray-500 hover:text-gray-700">
+                                  <Link 
+                                  to={post.href}
+                                  state={{category: post.name}} 
+                                  className="font-medium text-gray-500 hover:text-gray-700">
                                     {post.name}
-                                  </a>
+                                  </Link>
                                 </li>
                               ))}
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
-                            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <Link to="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                               View all
                               <span aria-hidden="true"> &rarr;</span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -281,16 +288,16 @@ export default function Header() {
             </Popover>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+            <Link to="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
               </svg>
-            </a>
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+            </Link>
+            <Link to="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -310,11 +317,9 @@ export default function Header() {
               <div className="flex items-center text-white justify-between">
                 <div>
                  
-                  <a href="/">
-              <a
-                className="h-8 w-auto sm:h-10"
-              />Cool Fashion
-            </a>
+                  <Link to="/" className="h-8 w-auto sm:h-10">    
+              Cool Fashion
+            </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -326,29 +331,30 @@ export default function Header() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {girls.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
+                      state={{category: item.name}}
                       className="-m-3 flex items-center  rounded-md p-3 hover:bg-gray-50"
                     >
                       <span className="ml-3 text-base font-medium text-gray-500">{item.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
             </div>
               <div>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                 >
                 Go to checkout
-                </a>
+                </Link>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <Link to="#" className="text-indigo-600 hover:text-indigo-500">
                     Sign in
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
